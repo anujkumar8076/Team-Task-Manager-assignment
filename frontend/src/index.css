@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-4 py-2 rounded-lg transition-colors duration-150;
+  }
+  .btn-danger {
+    @apply bg-rose-600/20 hover:bg-rose-600/40 text-rose-400 font-medium px-4 py-2 rounded-lg transition-colors duration-150;
+  }
+  .input {
+    @apply bg-slate-800/60 border border-slate-700 text-slate-100 placeholder-slate-500 rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition;
+  }
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-xl p-5;
+  }
+  .badge-todo {
+    @apply bg-slate-700 text-slate-300 text-xs px-2 py-0.5 rounded-full font-mono;
+  }
+  .badge-in-progress {
+    @apply bg-amber-500/20 text-amber-400 text-xs px-2 py-0.5 rounded-full font-mono;
+  }
+  .badge-completed {
+    @apply bg-emerald-500/20 text-emerald-400 text-xs px-2 py-0.5 rounded-full font-mono;
+  }
+  .badge-overdue {
+    @apply bg-rose-500/20 text-rose-400 text-xs px-2 py-0.5 rounded-full font-mono;
+  }
+}
